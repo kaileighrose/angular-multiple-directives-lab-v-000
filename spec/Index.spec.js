@@ -3,7 +3,7 @@ var path = require('path');
 describe('Contacts', function() {
 	browser.get('http://localhost:8080');
 	it('should add a contact', function() {
-		element(by.model('vm.name')).sendKeys('Gary');
+		element(by.model('vm.newName')).sendKeys('Gary');
 		element(by.model('vm.phoneNumber')).sendKeys('0782837819');
 		element(by.css('button')).click();
 
